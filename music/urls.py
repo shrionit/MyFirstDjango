@@ -3,7 +3,8 @@ from . import views
 
 urlpatterns = [
     # /music/
-    path('', views.index, name='index')
+    path('', views.index, name='index'),
     
-    # /music/<id>/
+    #/music/<id>/
+    path('<id>/', views.search, name='search')
 ]
